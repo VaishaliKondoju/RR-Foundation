@@ -648,7 +648,7 @@ main {
     grid-template-columns: 1fr;
   }
 }
-/* ==== Team Page (horizontal cards) ==== */
+/* ==== Team Page (Board + Comms & Tech) ==== */
 
 .team-hero {
   background: linear-gradient(to right, #7f1d1d, #111827);
@@ -679,16 +679,26 @@ main {
   border-bottom: 1px solid #e5e7eb;
 }
 
+.team-section.team-alt {
+  background-color: #f9fafb;
+}
+
 .team-section-inner {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* Special wrapper for this layout */
+.team-group-title {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: #b91c1c;
+}
+
+/* Vertical list of rows */
 .team-single-list .team-section-inner {
   display: flex;
   flex-direction: column;
-  gap: 1.8rem;
+  gap: 1.4rem;
 }
 
 /* One row = image left, text right */
@@ -721,7 +731,7 @@ main {
   overflow: hidden;
 }
 
-/* If you use <img> inside team-photo, it will fill the circle */
+/* If you replace initials with <img>, it stays round */
 .team-photo img {
   width: 100%;
   height: 100%;
@@ -729,9 +739,9 @@ main {
 }
 
 /* Text content */
-.team-info h2 {
+.team-info h3 {
   margin: 0 0 0.25rem;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .team-role-line {
