@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Team | Fire Relief Foundation</title>
-
+  <title>About Us | Fire Relief Foundation</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,12 +12,13 @@
     rel="stylesheet"
   />
 </head>
+
 <body>
   <!-- Top Bar -->
   <div class="top-bar">
-    <span>Emergency Helpline: <a href="tel:+10000000000">+1 (000) 000-0000</a></span>
+    <span>Emergency helpline: <a href="tel:+10000000000">+1 (000) 000-0000</a></span>
     <span class="top-bar-highlight">
-      If you are currently in danger, call 911 immediately.
+      Need urgent assistance? Visit our <a href="emergency-help.html">Emergency Help</a> page.
     </span>
   </div>
 
@@ -31,121 +31,104 @@
       </a>
 
       <nav class="nav">
-        <button
-          class="nav-toggle"
-          id="navToggle"
-          aria-label="Toggle navigation menu"
-          aria-expanded="false"
-        >
-          ☰
-        </button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">☰</button>
         <ul class="nav-links" id="navLinks">
           <li><a href="index.html" data-page="home">Home</a></li>
           <li><a href="about.html" data-page="about">About</a></li>
           <li><a href="programs.html" data-page="programs">Our Work</a></li>
-          <li><a href="emergency-help.html" data-page="contact">Contact Us</a></li>
           <li><a href="team.html" data-page="team">Our Team</a></li>
           <li><a href="stories.html" data-page="stories">Stories</a></li>
           <li><a href="resources.html" data-page="resources">Resources</a></li>
+          <li><a href="emergency-help.html" data-page="help">Contact</a></li>
           <li><a href="donate.html" class="nav-donate" data-page="donate">Donate</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Main -->
+  <!-- Main Content -->
   <main>
-    <!-- Team Hero -->
-    <section class="team-hero">
-      <div class="team-hero-inner">
-        <h1>Our Team</h1>
+    <!-- About Hero Banner -->
+    <section class="about-hero">
+      <div class="about-hero-inner">
+        <h1>About Fire Relief Foundation</h1>
         <p>
-          Fire Relief Foundation is guided by a committed Board of Directors and a small
-          communications &amp; technology team working behind the scenes to support families after fire disasters.
+          We are committed to helping families recover, rebuild, and regain hope after fire disasters across the United States.
         </p>
       </div>
     </section>
 
-    <!-- Board of Directors -->
-    <section class="team-section team-single-list">
-      <div class="team-section-inner">
-        <h2 class="team-group-title">Board of Directors</h2>
-
-        <!-- Board Member 1 -->
-        <article class="team-row">
-          <div class="team-photo-wrapper">
-            <div class="team-photo">
-              <!-- initials placeholder -->
-              <span>AC</span>
-            </div>
-          </div>
-          <div class="team-info">
-            <h3>Alex Carter</h3>
-            <p class="team-role-line">Chair &amp; Founder</p>
-            <p class="team-bio-line">
-              Alex founded Fire Relief Foundation after witnessing the impact of residential fires in the community.
-              As Board Chair, Alex leads the organization’s mission, vision, and overall direction.
-            </p>
-          </div>
-        </article>
-
-        <!-- Board Member 2 -->
-        <article class="team-row">
-          <div class="team-photo-wrapper">
-            <div class="team-photo">
-              <span>BL</span>
-            </div>
-          </div>
-          <div class="team-info">
-            <h3>Brianna Lee</h3>
-            <p class="team-role-line">Vice President</p>
-            <p class="team-bio-line">
-              Brianna supports strategic planning, governance, and partnerships, ensuring that programs are effective,
-              accountable, and aligned with community needs.
-            </p>
-          </div>
-        </article>
+    <!-- Our Story -->
+    <section class="about-section">
+      <div class="about-section-inner">
+        <h2>Our Story</h2>
+        <p>
+          The Fire Relief Foundation was created to provide immediate support for families who lose their homes to fire. 
+          When disaster strikes, most families have less than 5 minutes to escape leaving everything behind. 
+          Our organization steps in to provide emergency assistance, essential supplies, shelter support, and long-term recovery guidance.
+        </p>
+        <p>
+          What began with a small group of community members responding to a local fire has grown into a dedicated nonprofit serving families across the United States.
+        </p>
       </div>
     </section>
 
-    <!-- Communications & Technology -->
-    <section class="team-section team-single-list team-alt">
-      <div class="team-section-inner">
-        <h2 class="team-group-title">Communications &amp; Technology</h2>
+    <!-- Mission & Vision -->
+    <section class="about-grid">
+      <div class="about-card">
+        <h3>Our Mission</h3>
+        <p>
+          To provide compassionate, immediate, and long-term support to individuals and families affected by fire disasters.
+        </p>
+      </div>
 
-        <!-- Comms -->
-        <article class="team-row">
-          <div class="team-photo-wrapper">
-            <div class="team-photo">
-              <span>NS</span>
-            </div>
-          </div>
-          <div class="team-info">
-            <h3>Nadia Singh</h3>
-            <p class="team-role-line">Communications Lead</p>
-            <p class="team-bio-line">
-              Nadia leads external communications, outreach, and storytelling, helping the community and donors
-              understand the impact of our work with fire-affected families.
-            </p>
-          </div>
-        </article>
+      <div class="about-card">
+        <h3>Our Vision</h3>
+        <p>
+          A future where every fire-affected family receives the assistance they need — without delay, without barriers, without fear.
+        </p>
+      </div>
 
-        <!-- YOU -->
-        <article class="team-row">
-          <div class="team-photo-wrapper">
-            <div class="team-photo">
-              <span>YN</span>
-            </div>
-          </div>
-          <div class="team-info">
-            <h3>Your Name</h3>
-            <p class="team-role-line">Chief Technology &amp; Digital Strategy</p>
-            <p class="team-bio-line">
-              [Your Name] oversees the foundation’s website, digital tools, and online donation systems, ensuring that
-              families can reach us quickly and donors can give securely from anywhere.
-            </p>
-          </div>
-        </article>
+      <div class="about-card">
+        <h3>Our Values</h3>
+        <ul>
+          <li>Compassion & dignity</li>
+          <li>Transparency & trust</li>
+          <li>Community support</li>
+          <li>Safety & preparedness</li>
+          <li>Equitable access to relief</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- What We Do -->
+    <section class="about-section">
+      <div class="about-section-inner">
+        <h2>What We Do</h2>
+        <ul class="about-list">
+          <li>🏠 Emergency housing coordination</li>
+          <li>🍲 Food, clothing & hygiene essentials</li>
+          <li>📞 24/7 crisis support</li>
+          <li>📄 Document replacement guidance</li>
+          <li>❤️ Long-term recovery assistance</li>
+          <li>🔥 Fire safety education for communities</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Legal + Nonprofit Info -->
+    <section class="about-section">
+      <div class="about-section-inner">
+        <h2>Organization Information</h2>
+        <p>
+          Fire Relief Foundation is a nonprofit organization based in the United States.
+        </p>
+        <ul class="about-details">
+          <li><strong>Status:</strong> 501(c)(3) Nonprofit (if applicable)</li>
+          <li><strong>EIN:</strong> [Add EIN Here]</li>
+          <li><strong>Founded:</strong> 2024</li>
+          <li><strong>Governance:</strong> Managed by an independent Board of Directors</li>
+        </ul>
       </div>
     </section>
   </main>
@@ -159,7 +142,7 @@
           <span class="logo-text">Fire Relief Foundation</span>
         </div>
         <p class="footer-text">
-          Supporting families rebuilding after fire disasters across the United States.
+          Providing emergency relief and long-term recovery assistance to fire-affected families across the United States.
         </p>
       </div>
 
@@ -176,7 +159,7 @@
         <h3>Quick Links</h3>
         <ul class="footer-list">
           <li><a href="donate.html">Donate</a></li>
-          <li><a href="programs.html">Our Work</a></li>
+          <li><a href="team.html">Our Team</a></li>
           <li><a href="stories.html">Impact Stories</a></li>
           <li><a href="resources.html">Fire Safety</a></li>
         </ul>
