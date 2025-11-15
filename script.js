@@ -29,11 +29,10 @@ const pageMap = {
   "index.html": "home",
   "about.html": "about",
   "programs.html": "programs",
-  "emergency-help.html": "help",
   "team.html": "team",
   "stories.html": "stories",
   "resources.html": "resources",
-  "contact.html": "contact",
+  "emergency-help.html": "contact",
   "donate.html": "donate",
 };
 
