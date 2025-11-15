@@ -648,3 +648,105 @@ main {
     grid-template-columns: 1fr;
   }
 }
+/* ==== Team Page ==== */
+
+.team-hero {
+  background: linear-gradient(to right, #7f1d1d, #111827);
+  color: #f9fafb;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.team-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.team-hero h1 {
+  margin: 0 0 0.7rem;
+  font-size: 2.3rem;
+}
+
+.team-hero p {
+  margin: 0;
+  font-size: 1.02rem;
+  color: #e5e7eb;
+}
+
+.team-section {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.team-section.team-alt {
+  background-color: #f9fafb;
+}
+
+.team-section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-section h2 {
+  margin-top: 0;
+  color: #b91c1c;
+  margin-bottom: 0.4rem;
+}
+
+.team-section-intro {
+  max-width: 800px;
+  margin-bottom: 1.6rem;
+}
+
+/* Team grid */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.team-grid-board {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Team card */
+.team-card {
+  background-color: #ffffff;
+  border-radius: 0.9rem;
+  padding: 1.3rem 1.2rem;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.team-card.small {
+  gap: 0.2rem;
+}
+
+.team-avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f97316, #b91c1c);
+  color: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.team-role {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #6b7280;
+  margin: 0;
+}
+
+.team-bio {
+  font-size: 0.9rem;
+  color: #4b5563;
+  margin: 0.2rem 0 0;
+}
