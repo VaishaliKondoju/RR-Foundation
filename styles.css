@@ -454,3 +454,197 @@ main {
     padding-inline: 1rem;
   }
 }
+/* ==== About Page Styles ==== */
+
+/* Hero Banner */
+.about-hero {
+  background: linear-gradient(to right, #7f1d1d, #b91c1c);
+  color: #fef2f2;
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+}
+
+.about-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-hero h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.about-hero p {
+  font-size: 1.05rem;
+  color: #fee2e2;
+}
+
+/* Section blocks */
+.about-section {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.about-section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  margin-top: 0;
+  color: #b91c1c;
+  margin-bottom: 0.9rem;
+}
+
+/* Mission / Vision / Values Grid */
+.about-grid {
+  padding: 3rem 1.5rem;
+  background-color: #f9fafb;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.6rem;
+}
+
+.about-card {
+  background-color: #ffffff;
+  border-radius: 0.8rem;
+  padding: 1.4rem 1.2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.about-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #7f1d1d;
+}
+
+.about-card ul {
+  padding-left: 1.2rem;
+}
+
+/* Lists */
+.about-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.05rem;
+}
+
+.about-list li {
+  padding: 0.4rem 0;
+}
+
+.about-details {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-details li {
+  padding: 0.3rem 0;
+}
+
+
+/* ==== Emergency Help & Contact Page ==== */
+
+.help-hero {
+  background: linear-gradient(to right, #7f1d1d, #b91c1c);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+
+.help-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.help-hero h1 {
+  margin: 0 0 0.7rem;
+  font-size: 2.3rem;
+}
+
+.help-hero p {
+  font-size: 1.05rem;
+  color: #fee2e2;
+}
+
+/* Sections */
+.help-section {
+  padding: 2.8rem 1.5rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.help-section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Lists */
+.help-steps {
+  list-style: none;
+  padding: 0;
+  font-size: 1.05rem;
+}
+
+.help-steps li {
+  margin-bottom: 0.5rem;
+}
+
+/* Forms */
+.help-form {
+  max-width: 600px;
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 0.4rem;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+/* CONTACT SECTION */
+.help-contact {
+  background: #f9fafb;
+  padding: 3rem 1.5rem;
+}
+
+.help-contact-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-info-block h3 {
+  margin-bottom: 0.4rem;
+  color: #7f1d1d;
+}
+
+.contact-info-block p {
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
