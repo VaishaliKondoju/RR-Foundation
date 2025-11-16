@@ -1181,3 +1181,198 @@ main {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+/* ==== Fire Safety Resources Page ==== */
+
+.resources-hero {
+  background: linear-gradient(to right, #111827, #7f1d1d);
+  color: #f9fafb;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.resources-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.resources-hero h1 {
+  margin: 0 0 0.7rem;
+  font-size: 2.3rem;
+}
+
+.resources-hero p {
+  margin: 0;
+  font-size: 1.02rem;
+  color: #e5e7eb;
+}
+
+/* Quick 3 columns */
+.resources-quick {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resources-quick-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.6rem 1.5rem 2.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.resources-quick-card {
+  background-color: #f9fafb;
+  border-radius: 0.9rem;
+  padding: 1.3rem 1.2rem;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+}
+
+.resources-quick-card h2 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  color: #b91c1c;
+}
+
+.resources-quick-card p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.resources-quick-card ul {
+  padding-left: 1.1rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Sections */
+.resources-section {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resources-section.resources-alt {
+  background-color: #f9fafb;
+}
+
+.resources-section-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.resources-section h2 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  color: #b91c1c;
+}
+
+.resources-section p {
+  max-width: 800px;
+  color: #4b5563;
+}
+
+/* Cards grid */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.4rem;
+}
+
+.resources-card {
+  background-color: #ffffff;
+  border-radius: 0.9rem;
+  padding: 1.2rem 1.1rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.resources-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  color: #111827;
+}
+
+/* bullet lists */
+.resources-list {
+  list-style: disc;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+  color: #4b5563;
+}
+
+.resources-list li + li {
+  margin-top: 0.25rem;
+}
+
+/* Download-style list */
+.resources-downloads .resources-section-inner {
+  max-width: 900px;
+}
+
+.resources-download-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.3rem;
+}
+
+.resources-download-list li {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.7rem;
+  align-items: center;
+  padding: 0.7rem 0.2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.file-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  background-color: #eef2ff;
+  color: #4f46e5;
+}
+
+.file-title {
+  font-size: 0.95rem;
+}
+
+.file-btn {
+  border-radius: 999px;
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.file-btn:hover {
+  background-color: #111827;
+  color: #f9fafb;
+  border-color: #111827;
+}
+
+/* External links list */
+.resources-links-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1.3rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.resources-links-list li + li {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .resources-download-list li {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+}
