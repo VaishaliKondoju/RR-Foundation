@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donate | Fire Relief Foundation</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="top-bar">
+    <span>Emergency Helpline: <a href="tel:+10000000000">+1 (000) 000-0000</a></span>
+    <span class="top-bar-highlight">
+      If you are currently in danger, call 911 immediately.
+    </span>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">🔥</span>
+        <span class="logo-text">Fire Relief Foundation</span>
+      </a>
+
+      <nav class="nav">
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="about.html" data-page="about">About</a></li>
+          <li><a href="programs.html" data-page="programs">Our Work</a></li>
+          <li><a href="emergency-help.html" data-page="contact">Contact Us</a></li>
+          <li><a href="team.html" data-page="team">Our Team</a></li>
+          <li><a href="stories.html" data-page="stories">Stories</a></li>
+          <li><a href="resources.html" data-page="resources">Resources</a></li>
+          <li><a href="donate.html" class="nav-donate" data-page="donate">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Donate hero -->
+    <section class="donate-hero">
+      <div class="donate-hero-inner">
+        <h1>Donate to Support Fire Survivors</h1>
+        <p>
+          Your gift helps families who have lost their homes to fire receive emergency relief, shelter support,
+          and long-term recovery assistance.
+        </p>
+      </div>
+    </section>
+
+    <!-- Donate main section -->
+    <section class="section section-donate" id="donate">
+      <div class="section-inner donate-inner">
+        <div class="donate-layout">
+          <!-- Left: donation "form" UI -->
+          <div class="donate-form-box">
+            <h2>Choose Your Gift</h2>
+            <p class="donate-intro">
+              Select an amount and frequency. You’ll be able to complete your donation through our secure payment partner.
+            </p>
+
+            <!-- One-time / Monthly -->
+            <div class="donate-frequency">
+              <button type="button" class="freq-btn active" data-frequency="once">
+                One-time
+              </button>
+              <button type="button" class="freq-btn" data-frequency="monthly">
+                Monthly
+              </button>
+            </div>
+
+            <!-- Quick amounts -->
+            <div class="donate-amounts">
+              <button type="button" class="amount-btn" data-amount="25">$25</button>
+              <button type="button" class="amount-btn" data-amount="50">$50</button>
+              <button type="button" class="amount-btn" data-amount="100">$100</button>
+              <button type="button" class="amount-btn" data-amount="250">$250</button>
+              <button type="button" class="amount-btn" data-amount="500">$500</button>
+            </div>
+
+            <!-- Custom amount -->
+            <div class="form-row inline">
+              <label for="customAmount">Or enter a custom amount (USD)</label>
+              <div class="amount-input-wrapper">
+                <span class="currency-prefix">$</span>
+                <input
+                  type="number"
+                  id="customAmount"
+                  min="1"
+                  step="1"
+                  placeholder="75"
+                />
+              </div>
+            </div>
+
+            <!-- Purpose -->
+            <div class="form-row">
+              <label for="giftPurpose">Direct my gift to</label>
+              <select id="giftPurpose">
+                <option value="where-needed">Where it’s needed most</option>
+                <option value="emergency-relief">Emergency fire relief</option>
+                <option value="shelter-housing">Shelter & temporary housing</option>
+                <option value="long-term-recovery">Long-term recovery support</option>
+              </select>
+            </div>
+
+            <!-- Continue button -->
+            <div class="form-row">
+              <button type="button" id="donateNowBtn" class="btn primary btn-block">
+                Continue to Secure Payment
+              </button>
+              <p class="donate-secure-note">
+                🔐 Payments are processed securely by our trusted payment partners.
+              </p>
+              <p id="donateUiStatus" class="form-status small-text" aria-live="polite"></p>
+            </div>
+
+            <!-- Payment logos (placeholder) -->
+            <div class="donate-gateway-logos small-text">
+              <span>We accept major credit &amp; debit cards</span>
+              <div class="fake-logos">
+                <span>VISA</span><span>MC</span><span>AMEX</span><span>PayPal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: info -->
+          <div class="donate-info-box">
+            <h3>Where Your Donation Goes</h3>
+            <ul class="checklist">
+              <li>Emergency care kits for families who flee their homes</li>
+              <li>Connections to safe temporary shelter and housing</li>
+              <li>Support with documents, referrals, and long-term recovery</li>
+              <li>Fire safety education to reduce future risk</li>
+            </ul>
+
+            <div class="donate-breakdown">
+              <h4>Example Allocation of Funds</h4>
+              <ul class="donate-breakdown-list">
+                <li><strong>40%</strong> — Emergency relief & essentials</li>
+                <li><strong>30%</strong> — Shelter & housing support</li>
+                <li><strong>20%</strong> — Recovery & case support</li>
+                <li><strong>10%</strong> — Administration & operations</li>
+              </ul>
+              <p class="small-text">
+                Percentages may vary based on current needs, but we are committed
+                to using your gift responsibly and transparently.
+              </p>
+            </div>
+
+            <div class="donate-tax-box">
+              <h4>Tax &amp; Receipts (United States)</h4>
+              <p class="small-text">
+                Fire Relief Foundation is a nonprofit organization based in the United States.
+                If recognized as a 501(c)(3), donations may be tax-deductible to the extent allowed by law.
+              </p>
+              <p class="small-text">
+                Legal name: <strong>[NGO Legal Name]</strong><br />
+                EIN: <strong>[XX-XXXXXXX]</strong> (update when confirmed)
+              </p>
+              <p class="small-text">
+                You will receive a confirmation email / receipt for your donation.
+              </p>
+            </div>
+
+            <div class="donate-other-ways">
+              <h4>Other Ways to Give</h4>
+              <ul class="small-text">
+                <li>
+                  <strong>Mail a check:</strong><br />
+                  Payable to “[NGO Legal Name]”<br />
+                  123 Hope Street<br />
+                  City, State, ZIP
+                </li>
+                <li>
+                  <strong>Employer matching gifts:</strong> Ask your employer if
+                  they offer donation matching to increase your impact.
+                </li>
+                <li>
+                  <strong>Questions?</strong> Contact us at
+                  <a href="mailto:donors@example.org">donors@example.org</a>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="donate-faq">
+          <h3>Frequently Asked Questions</h3>
+          <details>
+            <summary>Will I receive a receipt for my donation?</summary>
+            <p>
+              Yes. You’ll receive an email confirmation after your donation is completed.
+              If you don’t see it, please check your spam folder or contact us.
+            </p>
+          </details>
+          <details>
+            <summary>Is my donation tax-deductible?</summary>
+            <p>
+              If the organization is recognized as a 501(c)(3) public charity in the U.S.,
+              your gift may be tax-deductible to the extent allowed by law. Please consult
+              your tax advisor for details about your situation.
+            </p>
+          </details>
+          <details>
+            <summary>Can I donate by check?</summary>
+            <p>
+              Yes. You can mail a check to the address listed above. Please include your
+              email address if you’d like to receive a digital receipt.
+            </p>
+          </details>
+          <details>
+            <summary>Can I make a monthly donation?</summary>
+            <p>
+              Absolutely. Select “Monthly” above when choosing your amount. When we connect
+              this page to our payment provider, you’ll be able to set up an automatic monthly gift.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <span class="logo-mark">🔥</span>
+          <span class="logo-text">Fire Relief Foundation</span>
+        </div>
+        <p class="footer-text">
+          Supporting families rebuilding after fire disasters across the United States.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul class="footer-list">
+          <li><strong>Email:</strong> info@firerelief.org</li>
+          <li><strong>Helpline:</strong> +1 (000) 000-0000</li>
+          <li><strong>Address:</strong> 123 Hope Street, City, State, ZIP</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-list">
+          <li><a href="programs.html">Our Work</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="stories.html">Impact Stories</a></li>
+          <li><a href="resources.html">Fire Safety</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="footer-list">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-small">© <span id="year"></span> Fire Relief Foundation</p>
+      <p class="footer-small">Website developed by You ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

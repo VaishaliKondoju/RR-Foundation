@@ -909,3 +909,275 @@ main {
     display: none; /* On small screens we rely on swipe / scroll */
   }
 }
+
+
+/* ==== Donate Page ==== */
+
+.donate-hero {
+  background: linear-gradient(to right, #7f1d1d, #b91c1c);
+  color: #fef2f2;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.donate-hero-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.donate-hero h1 {
+  margin: 0 0 0.7rem;
+  font-size: 2.3rem;
+}
+
+.donate-hero p {
+  margin: 0;
+  font-size: 1.02rem;
+  color: #fee2e2;
+}
+
+/* main donate layout */
+.section-donate {
+  padding: 3rem 1.5rem 3.2rem;
+  background: #f9fafb;
+}
+
+.donate-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.donate-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 1.8rem;
+  align-items: flex-start;
+}
+
+.donate-form-box,
+.donate-info-box {
+  background-color: #111827;
+  border-radius: 0.9rem;
+  padding: 1.5rem 1.4rem;
+  color: #fef2f2;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.4);
+}
+
+.donate-info-box {
+  background-color: #020617;
+}
+
+.donate-form-box h2 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.donate-intro {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  margin-bottom: 1.1rem;
+}
+
+/* frequency buttons */
+.donate-frequency {
+  display: inline-flex;
+  border-radius: 999px;
+  background-color: #020617;
+  padding: 0.15rem;
+  margin-bottom: 1rem;
+}
+
+.freq-btn {
+  border: none;
+  background: transparent;
+  color: #e5e7eb;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.freq-btn.active {
+  background-color: #f97316;
+  color: #111827;
+}
+
+/* amounts */
+.donate-amounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.amount-btn {
+  border-radius: 999px;
+  border: 1px solid rgba(248, 250, 252, 0.7);
+  background-color: transparent;
+  color: #fef2f2;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.amount-btn.active {
+  background-color: #f97316;
+  border-color: #f97316;
+  color: #111827;
+}
+
+/* inputs */
+.form-row {
+  margin-bottom: 0.9rem;
+}
+
+.form-row.inline label {
+  margin-bottom: 0.2rem;
+}
+
+.amount-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.2rem;
+}
+
+.currency-prefix {
+  padding: 0.45rem 0.5rem;
+  border-radius: 0.4rem;
+  background-color: #020617;
+  color: #f9fafb;
+  font-size: 0.95rem;
+}
+
+.amount-input-wrapper input {
+  flex: 1;
+}
+
+/* base inputs reuse global styles if you already have, but ensure they're readable on dark */
+.section-donate input,
+.section-donate select {
+  width: 100%;
+  padding: 0.6rem 0.65rem;
+  border-radius: 0.4rem;
+  border: 1px solid #4b5563;
+  background-color: #020617;
+  color: #f9fafb;
+  font-size: 0.95rem;
+}
+
+/* full-width btn */
+.btn-block {
+  width: 100%;
+  justify-content: center;
+}
+
+.donate-secure-note {
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+  color: #fee2e2;
+}
+
+/* fake logos */
+.donate-gateway-logos {
+  margin-top: 0.9rem;
+}
+
+.donate-gateway-logos .fake-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.donate-gateway-logos .fake-logos span {
+  border-radius: 0.3rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  padding: 0.15rem 0.4rem;
+  font-size: 0.75rem;
+}
+
+/* info side */
+.donate-info-box h3,
+.donate-info-box h4 {
+  margin-top: 0;
+}
+
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1rem;
+  font-size: 0.92rem;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.checklist li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  font-size: 0.75rem;
+  color: #bbf7d0;
+}
+
+.donate-breakdown {
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.donate-breakdown-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+
+.donate-breakdown-list li {
+  margin-bottom: 0.25rem;
+}
+
+.donate-tax-box,
+.donate-other-ways {
+  margin-top: 1rem;
+}
+
+/* FAQ */
+.donate-faq {
+  margin-top: 2.4rem;
+}
+
+.donate-faq h3 {
+  margin-bottom: 0.8rem;
+}
+
+.donate-faq details {
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.7rem;
+  border: 1px solid #e5e7eb;
+}
+
+.donate-faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.donate-faq p {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .donate-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

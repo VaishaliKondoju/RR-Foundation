@@ -50,3 +50,90 @@ if (currentPageKey && navLinks) {
     activeLink.classList.add("active");
   }
 }
+
+// ==== Simple horizontal slider for "Our Work" cards ====
+const workSliders = document.querySelectorAll(".work-slider");
+
+workSliders.forEach((slider) => {
+  const viewport = slider.querySelector(".work-slider-viewport");
+  const prevBtn = slider.querySelector(".work-slider-btn.prev");
+  const nextBtn = slider.querySelector(".work-slider-btn.next");
+
+  if (!viewport || !prevBtn || !nextBtn) return;
+
+  const scrollAmount = () => viewport.clientWidth * 0.9;
+
+  prevBtn.addEventListener("click", () => {
+    viewport.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+  });
+
+  nextBtn.addEventListener("click", () => {
+    viewport.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+  });
+});
+
+// ==== Donate page UI logic ====
+const freqButtons = document.querySelectorAll(".freq-btn");
+const amountButtons = document.querySelectorAll(".amount-btn");
+const customAmountInput = document.getElementById("customAmount");
+const donateNowBtn = document.getElementById("donateNowBtn");
+const donateUiStatus = document.getElementById("donateUiStatus");
+const giftPurposeSelect = document.getElementById("giftPurpose");
+
+let selectedFrequency = "once";
+let selectedAmount = null;
+
+// frequency toggle
+freqButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    freqButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    selectedFrequency = btn.dataset.frequency;
+  });
+});
+
+// quick amount buttons
+amountButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    amountButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    selectedAmount = Number(btn.dataset.amount || 0);
+    if (customAmountInput) {
+      customAmountInput.value = "";
+    }
+  });
+});
+
+// custom amount typing
+if (customAmountInput) {
+  customAmountInput.addEventListener("input", () => {
+    const val = Number(customAmountInput.value || 0);
+    selectedAmount = val > 0 ? val : null;
+    amountButtons.forEach((b) => b.classList.remove("active"));
+  });
+}
+
+// continue button
+if (donateNowBtn && donateUiStatus) {
+  donateNowBtn.addEventListener("click", () => {
+    donateUiStatus.style.color = "#fee2e2";
+
+    if (!selectedAmount || selectedAmount <= 0) {
+      donateUiStatus.textContent =
+        "Please select or enter a donation amount to continue.";
+      return;
+    }
+
+    const purpose =
+      (giftPurposeSelect && giftPurposeSelect.value) || "where-needed";
+    const freqLabel = selectedFrequency === "monthly" ? "monthly" : "one-time";
+
+    // Here is where you would redirect to Stripe/PayPal/etc:
+    // window.location.href = "https://your-donation-platform.com/checkout-url";
+
+    donateUiStatus.textContent =
+      `You selected a ${freqLabel} donation of $${selectedAmount}` +
+      (purpose ? ` for “${purpose.replace(/-/g, " ")}”.` : ".") +
+      " Connect this button to your payment provider when ready.";
+  });
+}
