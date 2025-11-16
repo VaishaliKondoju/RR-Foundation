@@ -1376,3 +1376,7 @@ main {
     align-items: flex-start;
   }
 }
+/* Slight emphasis for NGO-specific resources section */
+.resources-ngo {
+  border-top: 1px solid #e5e7eb;
+}
