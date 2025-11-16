@@ -137,3 +137,60 @@ if (donateNowBtn && donateUiStatus) {
       " Connect this button to your payment provider when ready.";
   });
 }
+
+
+// ==== Stories slider (auto-advance) ====
+const storySliders = document.querySelectorAll("[data-slider='stories']");
+
+storySliders.forEach((sliderRoot) => {
+  const track = sliderRoot.querySelector(".stories-slider-track");
+  const slides = sliderRoot.querySelectorAll(".story-slide");
+  const dots = sliderRoot.querySelectorAll(".story-dot");
+
+  if (!track || slides.length === 0) return;
+
+  let currentIndex = 0;
+  let autoplayId = null;
+  const slideCount = slides.length;
+  const intervalMs = 7000; // 7 seconds per slide
+
+  function goToSlide(index) {
+    currentIndex = (index + slideCount) % slideCount;
+    const offset = -currentIndex * 100;
+    track.style.transform = `translateX(${offset}%)`;
+
+    // update dot active state
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === currentIndex);
+    });
+  }
+
+  function startAutoplay() {
+    if (autoplayId !== null) return;
+    autoplayId = setInterval(() => {
+      goToSlide(currentIndex + 1);
+    }, intervalMs);
+  }
+
+  function stopAutoplay() {
+    if (autoplayId !== null) {
+      clearInterval(autoplayId);
+      autoplayId = null;
+    }
+  }
+
+  // Dots click
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      goToSlide(i);
+    });
+  });
+
+  // Pause on hover (desktop)
+  sliderRoot.addEventListener("mouseenter", stopAutoplay);
+  sliderRoot.addEventListener("mouseleave", startAutoplay);
+
+  // Initialize
+  goToSlide(0);
+  startAutoplay();
+});

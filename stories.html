@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stories of Impact | Fire Relief Foundation</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="top-bar">
+    <span>Emergency Helpline: <a href="tel:+10000000000">+1 (000) 000-0000</a></span>
+    <span class="top-bar-highlight">
+      If you are currently in danger, call 911 immediately.
+    </span>
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">🔥</span>
+        <span class="logo-text">Fire Relief Foundation</span>
+      </a>
+
+      <nav class="nav">
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" data-page="home">Home</a></li>
+          <li><a href="about.html" data-page="about">About</a></li>
+          <li><a href="programs.html" data-page="programs">Our Work</a></li>
+          <li><a href="emergency-help.html" data-page="contact">Contact Us</a></li>
+          <li><a href="team.html" data-page="team">Our Team</a></li>
+          <li><a href="stories.html" data-page="stories">Stories</a></li>
+          <li><a href="resources.html" data-page="resources">Resources</a></li>
+          <li><a href="donate.html" class="nav-donate" data-page="donate">Donate</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="stories-hero">
+      <div class="stories-hero-inner">
+        <h1>Stories of Impact</h1>
+        <p>
+          Behind every fire is a family, a story, and a journey of recovery.
+          Here are a few examples of how your support helps people rebuild after disaster.
+        </p>
+      </div>
+    </section>
+
+    <!-- Story slider -->
+    <section class="stories-slider-section">
+      <div class="stories-slider-inner" data-slider="stories">
+        <div class="stories-slider-viewport">
+          <div class="stories-slider-track">
+            <!-- SLIDE 1 -->
+            <article class="story-slide active">
+              <div class="story-media">
+                <!-- Replace with real image later: images/story1.jpg -->
+                <img src="images/story1.jpg" alt="Family standing outside their home with support staff" />
+              </div>
+              <div class="story-content">
+                <p class="story-meta">Phoenix, AZ • Kitchen Fire • Family of Four</p>
+                <h2>“We didn’t know where to start after the fire.”</h2>
+                <p>
+                  After a late-night kitchen fire spread through their apartment, the Lopez family left with
+                  only the clothes they were wearing. Within 24 hours, Fire Relief Foundation provided emergency
+                  care kits, grocery support, and connections to a short-term housing partner.
+                </p>
+                <p>
+                  Over the next few weeks, our team checked in regularly, helping them navigate paperwork,
+                  understand insurance options, and access school supplies for their children so they
+                  could return to class.
+                </p>
+              </div>
+            </article>
+
+            <!-- SLIDE 2 -->
+            <article class="story-slide">
+              <div class="story-media">
+                <img src="images/story2.jpg" alt="Elderly couple sitting together with documents and support materials" />
+              </div>
+              <div class="story-content">
+                <p class="story-meta">Denver, CO • Electrical Fire • Senior Couple</p>
+                <h2>Finding a Safe Place to Sleep</h2>
+                <p>
+                  When an electrical fire damaged the Ramirez home, the couple was unsure where they would stay.
+                  We coordinated with local partners to secure hotel accommodation for several nights while
+                  they worked with their insurance and family members.
+                </p>
+                <p>
+                  We also connected them with a caseworker to assist with medications, replacement of important
+                  documents, and transportation to medical appointments during the recovery process.
+                </p>
+              </div>
+            </article>
+
+            <!-- SLIDE 3 -->
+            <article class="story-slide">
+              <div class="story-media">
+                <img src="images/story3.jpg" alt="Community gathered for a fire safety workshop" />
+              </div>
+              <div class="story-content">
+                <p class="story-meta">Atlanta, GA • Community Workshop</p>
+                <h2>Preparing a Neighborhood Before the Next Fire</h2>
+                <p>
+                  In a neighborhood that had experienced multiple recent fires, we partnered with the local
+                  fire department to host a fire safety workshop for more than 30 families.
+                </p>
+                <p>
+                  Parents and kids learned how to create a home escape plan, check smoke alarms, and practice
+                  what to do if they see smoke. Each family left with printed resources and contact
+                  information for support if a fire occurs.
+                </p>
+              </div>
+            </article>
+
+            <!-- SLIDE 4 -->
+            <article class="story-slide">
+              <div class="story-media">
+                <img src="images/story4.jpg" alt="Single parent and child receiving support and supplies" />
+              </div>
+              <div class="story-content">
+                <p class="story-meta">Tacoma, WA • Duplex Fire • Single Parent</p>
+                <h2>Walking With a Family Through Recovery</h2>
+                <p>
+                  After a duplex fire displaced Maria and her young son, we provided immediate essentials,
+                  but the support didn’t end there. Over several months, our team helped with school enrollment,
+                  emotional support referrals, and searching for stable housing.
+                </p>
+                <p>
+                  With help from multiple community partners, Maria was able to move into a new apartment and
+                  rebuild a sense of stability for her family.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Dots -->
+        <div class="stories-slider-dots">
+          <button type="button" class="story-dot active" data-story-index="0" aria-label="Go to story 1"></button>
+          <button type="button" class="story-dot" data-story-index="1" aria-label="Go to story 2"></button>
+          <button type="button" class="story-dot" data-story-index="2" aria-label="Go to story 3"></button>
+          <button type="button" class="story-dot" data-story-index="3" aria-label="Go to story 4"></button>
+        </div>
+
+        <p class="stories-privacy-note">
+          Names and identifying details may be changed to protect privacy,
+          but each story reflects real types of support provided by Fire Relief Foundation.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="stories-cta">
+      <div class="stories-cta-inner">
+        <h2>Help Write the Next Story</h2>
+        <p>
+          Your support makes it possible for families to receive immediate help and long-term guidance after a fire.
+        </p>
+        <div class="stories-cta-actions">
+          <a href="donate.html" class="btn primary">Donate Now</a>
+          <a href="emergency-help.html" class="btn secondary">I Need Help</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <span class="logo-mark">🔥</span>
+          <span class="logo-text">Fire Relief Foundation</span>
+        </div>
+        <p class="footer-text">
+          Supporting families rebuilding after fire disasters across the United States.
+        </p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <ul class="footer-list">
+          <li><strong>Email:</strong> info@firerelief.org</li>
+          <li><strong>Helpline:</strong> +1 (000) 000-0000</li>
+          <li><strong>Address:</strong> 123 Hope Street, City, State, ZIP</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-list">
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="programs.html">Our Work</a></li>
+          <li><a href="resources.html">Fire Safety</a></li>
+          <li><a href="team.html">Our Team</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <ul class="footer-list">
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-small">© <span id="year"></span> Fire Relief Foundation</p>
+      <p class="footer-small">Website developed by You ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
