@@ -1561,47 +1561,14 @@ main {
   }
 }
 
+/* ==== Footer Logo Updated Branding ==== */
 
-/* ==== RR Foundation Logo: Helping Hands + Flame ==== */
-
-.logo,
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.45rem;
 }
 
-.logo-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-svg {
-  width: 32px;
-  height: 32px;
-}
-
-/* Header text */
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-  font-weight: 700;
-  color: #f9fafb;
-  font-size: 1.05rem;
-}
-
-.logo-tagline {
-  font-size: 0.62rem;
-  font-weight: 400;
-  letter-spacing: 0.4px;
-  opacity: 0.85;
-  margin-top: 2px;
-  text-transform: uppercase;
-}
-
-/* Footer text */
 .footer-logo-text {
   display: flex;
   flex-direction: column;
@@ -1611,23 +1578,11 @@ main {
   font-size: 1rem;
 }
 
-.footer-logo-tagline {
-  font-size: 0.65rem;
-  font-weight: 500;
-  color: #fef2f2;
-  opacity: 0.9;
-  margin-top: 4px;
-  letter-spacing: 0.3px;
+.footer-logo-caption {
+  font-size: 0.58rem;
+  font-weight: 400;
+  opacity: 0.85;
   text-transform: uppercase;
-}
-
-@media (max-width: 480px) {
-  .logo-svg {
-    width: 28px;
-    height: 28px;
-  }
-
-  .logo-text {
-    font-size: 0.98rem;
-  }
+  margin-top: 2px;
+  letter-spacing: 0.5px;
 }
