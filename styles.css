@@ -88,6 +88,18 @@ main {
 .logo-text {
   font-size: 1.05rem;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.logo-caption {
+  font-size: 0.58rem;
+  font-weight: 400;
+  opacity: 0.7;
+  text-transform: lowercase;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
 }
 
 .nav {
@@ -1547,4 +1559,30 @@ main {
   .story-content h2 {
     font-size: 1.1rem;
   }
+}
+
+/* ==== Footer Logo Updated Branding ==== */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.footer-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #fef2f2;
+  font-size: 1rem;
+}
+
+.footer-logo-caption {
+  font-size: 0.58rem;
+  font-weight: 400;
+  opacity: 0.85;
+  text-transform: uppercase;
+  margin-top: 2px;
+  letter-spacing: 0.5px;
 }
